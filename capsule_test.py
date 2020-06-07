@@ -2,7 +2,7 @@
 
 from Capsule_Keras import *
 from keras import utils
-from keras.datasets import mnist
+from keras.datasets import cifar10
 from keras.models import Model
 from keras.layers import *
 from keras import backend as K
