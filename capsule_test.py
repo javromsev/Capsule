@@ -7,6 +7,7 @@ from keras.models import Model
 from keras.layers import *
 from keras import backend as K
 
+import numpy as np
 
 #准备训练数据
 batch_size = 128
