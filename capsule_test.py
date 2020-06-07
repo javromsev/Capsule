@@ -38,7 +38,7 @@ Y_test.sort(axis=1) #排一下序，因为只比较集合，不比较顺序
 
 
 #搭建普通CNN分类模型
-input_image = Input(shape=(None,None,1))
+'''input_image = Input(shape=(None,None,1))
 cnn = Conv2D(64, (3, 3), activation='relu')(input_image)
 cnn = Conv2D(64, (3, 3), activation='relu')(cnn)
 cnn = AveragePooling2D((2,2))(cnn)
@@ -69,7 +69,7 @@ Y_pred.sort(axis=1) #排序，因为只比较集合
 acc = 1.*(np.prod(Y_pred == Y_test, axis=1)).sum()/len(X_test)
 print u'CNN+Pooling，不考虑置信度的准确率为：%s'%acc
 acc = 1.*(np.prod(Y_pred == Y_test, axis=1)*greater).sum()/len(X_test)
-print u'CNN+Pooling，考虑置信度的准确率为：%s'%acc
+print u'CNN+Pooling，考虑置信度的准确率为：%s'%acc'''
 
 
 
